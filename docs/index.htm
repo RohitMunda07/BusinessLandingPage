@@ -15,7 +15,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="/dist/app.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/docs/" type="image/x-icon">
 </head>
 
 <body>
@@ -23,21 +23,21 @@
     <div class="bg-gradient-to-t
     from-amber-400 h-[16rem] md:h-screen w-full relative">
 
-        <nav class="bg-amber-400 flex flex-wrap justify-between p-2 md:p-4 relative">
+        <nav class="bg-amber-400 flex justify-between w-full p-2 md:p-4 relative">
             <!-- logo -->
             <div class="flex items-center">
                 <img class="w-[180px] md:w-[230px]" src="logo.svg" alt="">
             </div>
 
             <button id="menu" class="font-semibold text-3xl md:hidden"> &#9776; </button>
-
-            <ul class="font-medium flex-wrap text-xl  md:flex space-x-3 items-center hidden">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><button>Login</button></li>
-                <li><button class="bg-lime-700 text-white rounded-lg p-2">Sign Up</button></li>
+            <!-- large screen -->
+            <ul class="hidden md:flex items-center space-x-10 text-xl font-medium">
+                <li class="font-bold"><a href="#home">Home</a></li>
+                <li class="font-bold"><a href="#Contact">Contact</a></li>
+                <li class="font-bold"><button>Login</button></li>
             </ul>
-
+            <button class="bg-lime-700 hidden md:block text-white rounded-lg p-2">Sign Up</button>
+            <!-- small screen -->
             <ul id="navBar"
                 class="font-medium text-xl space-y-2 text-center absolute bg-amber-300 w-full left-0 top-[3rem] hidden z-10 p-3 rounded-b-xl">
                 <li><a href="#">Home</a></li>
@@ -193,7 +193,7 @@
                     Download The App</button>
             </div>
 
-            <div class="ring-4 ring-black rounded-lg  mx-auto p-5 flex gap-5 flex-col">
+            <div id="Contact" class="ring-4 ring-black rounded-lg  mx-auto p-5 flex gap-5 flex-col">
                 <h1 class="text-3xl font-semibold">Let's Connect</h1>
                 <form action="">
                     <input class="w-full ring-4 font-semibold text-black p-3 ring-amber-400 mt-4 rounded-sm" type="text"
